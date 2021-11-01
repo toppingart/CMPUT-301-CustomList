@@ -36,5 +36,13 @@ public class CustomListTest {
 
 
     }
+
+
+    @Test
+    public void hasCityTest(){
+        list.addCity(c);
+        list.hasCity(c);
+
+    }
 }
 
