@@ -66,7 +66,7 @@ public class CustomList extends ArrayAdapter<City> {
         }
     }
 
-    public void hasCity(City c){
+    public boolean hasCity(City c){
         /*
         for (City city: cities){
             if (city.getCityName().equals(c)){
@@ -74,8 +74,8 @@ public class CustomList extends ArrayAdapter<City> {
             }
         }
         return false;
-
          */
+        return false;
     }
 
     public ArrayList<City> returnArrayList(){
