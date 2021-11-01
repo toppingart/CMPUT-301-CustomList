@@ -1,6 +1,7 @@
 package com.example.simpleparadox.listycity;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -49,7 +50,8 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     public int getCount(){
-        return cities.size();
+
+        //return cities.size();
     }
 
     public void addCity(City c){
@@ -67,10 +69,11 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     public boolean hasCity(City c){
-        for (City city: cities){
-            if (city.getCityName().equals(c.getCityName())){
-                return true;
-            }
+        for (City city: cities) {
+                if ((city.getCityName()).equals(c.getCityName())) {
+                    return true;
+                }
+
         }
         return false;
     }
