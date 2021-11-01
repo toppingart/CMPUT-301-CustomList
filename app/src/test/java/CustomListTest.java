@@ -30,7 +30,6 @@ public class CustomListTest {
     @Test
     public void deleteCityTest(){
 
-        /*
         int size = list.getCount();
         for (City city: list.returnArrayList()){
             if(city.getCityName().equals("Edmonton")){
@@ -40,7 +39,7 @@ public class CustomListTest {
         }
         assertEquals(size-1, list.getCount());
 
-         */
+
     }
 }
 
