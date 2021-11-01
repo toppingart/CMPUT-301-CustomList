@@ -13,6 +13,7 @@ import java.util.ArrayList;
 public class CustomListTest {
 
     static CustomList list;
+    City c;
 
     @Before
     public void setup(){
@@ -21,7 +22,7 @@ public class CustomListTest {
 
     @Test
     public void addCityTest(){
-        City c = new City("Edmonton", "AB");
+        c = new City("Edmonton", "AB");
         int size = list.getCount();
         list.addCity(c);
         assertEquals(size+1, list.getCount());
@@ -29,15 +30,9 @@ public class CustomListTest {
 
     @Test
     public void deleteCityTest(){
-
+        list.deleteCity(c);
         int size = list.getCount();
-        for (City city: list.returnArrayList()){
-            if(city.getCityName().equals("Edmonton")){
-                list.deleteCity(city);
-                break;
-            }
-        }
-        assertEquals(size-1, list.getCount());
+        assertEquals(size, list.getCount());
 
 
     }

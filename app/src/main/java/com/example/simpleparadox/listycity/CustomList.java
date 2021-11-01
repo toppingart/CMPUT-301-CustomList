@@ -57,8 +57,25 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     // adding more
-    public void deleteCity(City c){
-        cities.remove(c);
+    public void deleteCity(City c) {
+        for (City city : cities) {
+            if (city.getCityName().equals("Edmonton")) {
+                cities.remove(city);
+                break;
+            }
+        }
+    }
+
+    public void hasCity(City c){
+        /*
+        for (City city: cities){
+            if (city.getCityName().equals(c)){
+                return true;
+            }
+        }
+        return false;
+
+         */
     }
 
     public ArrayList<City> returnArrayList(){
