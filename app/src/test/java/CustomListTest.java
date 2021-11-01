@@ -1,5 +1,7 @@
 import static org.junit.Assert.assertEquals;
 
+import android.util.Log;
+
 import com.example.simpleparadox.listycity.City;
 import com.example.simpleparadox.listycity.CustomList;
 
@@ -23,6 +25,22 @@ public class CustomListTest {
         int size = list.getCount();
         list.addCity(c);
         assertEquals(size+1, list.getCount());
+    }
+
+    @Test
+    public void deleteCityTest(){
+
+        /*
+        int size = list.getCount();
+        for (City city: list.returnArrayList()){
+            if(city.getCityName().equals("Edmonton")){
+                list.deleteCity(city);
+                break;
+            }
+        }
+        assertEquals(size-1, list.getCount());
+
+         */
     }
 }
 

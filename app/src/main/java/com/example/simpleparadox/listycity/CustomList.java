@@ -55,4 +55,13 @@ public class CustomList extends ArrayAdapter<City> {
     public void addCity(City c){
         cities.add(c);
     }
+
+    // adding more
+    public void deleteCity(City c){
+        cities.remove(c);
+    }
+
+    public ArrayList<City> returnArrayList(){
+        return cities;
+    }
 }

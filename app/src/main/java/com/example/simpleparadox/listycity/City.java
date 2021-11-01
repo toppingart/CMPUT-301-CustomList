@@ -9,11 +9,11 @@ public class City {
         this.province = province;
     }
 
-    String getCityName(){
+    public String getCityName(){
         return this.city;
     }
 
-    String getProvinceName(){
+    public String getProvinceName(){
         return this.province;
     }
 }
