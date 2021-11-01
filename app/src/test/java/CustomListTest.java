@@ -29,6 +29,14 @@ public class CustomListTest {
     }
 
     @Test
+    public void hasCityTest(){
+        list.addCity(c);
+        assertEquals(1, list.getCount());
+        //assertEquals(true, list.hasCity(c));
+
+    }
+
+    @Test
     public void deleteCityTest(){
         list.deleteCity(c);
         int size = list.getCount();
@@ -37,14 +45,6 @@ public class CustomListTest {
 
     }
 
-
-    @Test
-    public void hasCityTest(){
-        list.addCity(c);
-        assertEquals(1, list.getCount());
-        //assertEquals(true, list.hasCity(c));
-
-    }
 
     @Test
     public void getCountTest(){
